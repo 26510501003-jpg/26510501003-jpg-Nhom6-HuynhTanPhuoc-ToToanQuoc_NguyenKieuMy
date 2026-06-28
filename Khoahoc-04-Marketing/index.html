@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Thực Chiến - EduMaster</title>
+    <!-- Nhúng Bootstrap 5 CSS qua CDN [5] -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Liên kết CSS dùng chung từ assets và CSS riêng của trang [4] -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <!-- 1. Navbar: Thanh điều hướng (Yêu cầu bắt buộc) [3] -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">EDU<span class="text-primary">MASTER</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../About/index.html">Giới thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Marketing</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Main Content: Chi tiết khóa học (Sử dụng Semantic HTML) [6, 7] -->
+    <main class="container py-5">
+        <!-- Breadcrumb dẫn hướng -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Trang chủ</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Khóa học Marketing</li>
+            </ol>
+        </nav>
+
+        <header class="row mt-4 align-items-center">
+            <div class="col-md-6 mb-4">
+                <!-- Hình ảnh minh họa (Yêu cầu đề bài) [3] -->
+                <img src="/assets/images/marketing.jpg" alt="Marketing thực chiến" class="img-fluid rounded-4 shadow-lg border border-5 border-white">
+            </div>
+            <div class="col-md-6">
+                <h1 class="fw-bold text-primary mb-3">Marketing Thực Chiến 4.0</h1>
+                <p class="lead">Làm chủ tư duy truyền thông đa kênh và kỹ năng triển khai chiến dịch bùng nổ doanh số.</p>
+                <hr>
+                <div class="course-info mt-4">
+                    <p><strong>Thời lượng:</strong> 5 tháng học tập & thực hành</p>
+                    <p><strong>Giảng viên:</strong> Thạc sĩ Marketing giàu kinh nghiệm</p>
+                    <p><strong>Chứng chỉ:</strong> Được cấp bởi hệ thống EduMaster</p>
+                </div>
+                <!-- Nút kêu gọi hành động (Hero Section requirement) [3] -->
+                <div class="mt-4 d-grid d-md-flex gap-3">
+                    <button id="enrollBtn" class="btn btn-primary btn-lg px-5">Đăng ký tư vấn</button>
+                    <button id="toggleCurriculum" class="btn btn-outline-secondary btn-lg">Xem 6 Module học</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- 3. Phần sản phẩm/nội dung chi tiết (Yêu cầu ít nhất 6 item) [3] -->
+        <section id="curriculum" class="mt-5 pt-5 d-none">
+            <h2 class="text-center fw-bold mb-5">Nội Dung 6 Module Đào Tạo</h2>
+            <div class="row g-4">
+                <!-- Module 01 -->
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary">01. Tổng quan Digital</h5>
+                            <p class="card-text text-muted small">Nắm vững các chỉ số KPI và tư duy lập kế hoạch Marketing.</p>
+                        </div>
+                    </article>
+                </div>
+                <!-- Module 02 -->
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary">02. Content Marketing</h5>
+                            <p class="card-text text-muted small">Kỹ thuật viết bài chuẩn SEO và sáng tạo kịch bản video xu hướng.</p>
+                        </div>
+                    </article>
+                </div>
+                <!-- Module 03 -->
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary">03. Facebook Ads</h5>
+                            <p class="card-text text-muted small">Thực chiến tối ưu hóa quảng cáo và xử lý tệp đối tượng.</p>
+                        </div>
+                    </article>
+                </div>
+                <!-- Module 04 -->
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary">04. Google Search</h5>
+                            <p class="card-text text-muted small">Quản lý ngân sách và từ khóa hiệu quả trên nền tảng Google.</p>
+                        </div>
+                    </article>
+                </div>
+                <!-- Module 05 -->
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary">05. Email & Automation</h5>
+                            <p class="card-text text-muted small">Xây dựng phễu khách hàng tự động để nuôi dưỡng chuyển đổi.</p>
+                        </div>
+                    </article>
+                </div>
+                <!-- Module 06 -->
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-primary">06. Project Cuối Khóa</h5>
+                            <p class="card-text text-muted small">Lập kế hoạch và trình bày dự án thực tế trước chuyên gia.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 4. Footer: Chân trang (Yêu cầu bắt buộc) [7] -->
+    <footer class="bg-dark text-white py-4 mt-5 text-center">
+        <div class="container">
+            <p class="mb-1 fw-bold">NHÓM SINH VIÊN ĐỒ ÁN CUỐI KỲ</p>
+            <p class="small text-secondary">&copy; 2026 EduMaster - Mọi quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (Dùng cho Navbar responsive) [5] -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Liên kết tệp script.js riêng để xử lý tương tác [7] -->
+    <script src="script.js"></script>
+</body>
+</html>
+Các điểm lưu ý quan trọng:
+Hệ thống Grid: Tôi đã

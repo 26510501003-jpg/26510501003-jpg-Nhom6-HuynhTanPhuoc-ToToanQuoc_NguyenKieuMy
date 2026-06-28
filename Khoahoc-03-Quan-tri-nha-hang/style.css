@@ -1,0 +1,81 @@
+/* 
+   CSS cho trang Chi tiết Khóa học Quản trị nhà hàng 
+   Thực hiện: [Tên của em]
+*/
+
+/* 1. THIẾT LẬP CHUNG & KẾ THỪA */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng chuyển đổi theme mượt mà */
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Định kiểu tiêu đề chính mang phong cách chuyên nghiệp */
+h1.text-primary {
+    color: #1e3a8a !important; /* Màu xanh Navy đậm (Quản trị) */
+    letter-spacing: -0.5px;
+}
+
+/* 2. ĐỊNH KIỂU HÌNH ẢNH MINH HỌA */
+.img-fluid.rounded-4.shadow-lg {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hiệu ứng tương tác khi di chuột vào ảnh */
+.img-fluid.rounded-4.shadow-lg:hover {
+    transform: scale(1.02) rotate(1deg);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* 3. PHẦN LỘ TRÌNH HỌC (JS INTERACTION) */
+#curriculumContent {
+    border-left: 5px solid #1e3a8a !important; /* Viền nhấn màu Navy */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.4s ease-out; /* Hiệu ứng xuất hiện khi bấm nút */
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-10px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* 4. CHẾ ĐỘ DARK MODE (ĐỒNG BỘ TOÀN WEB) */
+/* Kích hoạt khi script.js thêm class .dark-mode vào body [4] */
+body.dark-mode {
+    background-color: #0f172a !important; /* Màu nền tối sâu */
+    color: #f1f5f9 !important; /* Màu chữ sáng */
+}
+
+body.dark-mode .bg-light {
+    background-color: #1e293b !important; /* Đổi màu nền xám nhạt sang xám tối */
+}
+
+body.dark-mode h1.text-primary, 
+body.dark-mode .text-primary {
+    color: #38bdf8 !important; /* Đổi màu Navy sang xanh Cyan sáng để dễ đọc */
+}
+
+body.dark-mode #curriculumContent {
+    background-color: #1e293b !important;
+    border-color: #38bdf8 !important;
+    color: #cbd5e1;
+}
+
+body.dark-mode .breadcrumb-item a {
+    color: #38bdf8;
+}
+
+/* 5. TÍNH CHẤT RESPONSIVE [5] */
+@media (max-width: 768px) {
+    .container.py-5 {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Thu nhỏ tiêu đề trên mobile */
+    }
+
+    .d-grid.d-md-flex.gap-3 {
+        gap: 10px !important; /* Giảm khoảng cách giữa các nút bấm */
+    }
+}

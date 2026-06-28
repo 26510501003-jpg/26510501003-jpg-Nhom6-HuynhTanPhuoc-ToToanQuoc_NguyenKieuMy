@@ -1,0 +1,104 @@
+/* Thiết lập chung */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Hero section tùy biến */
+.hero-section {
+    min-height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('../images/hero-bg.jpg') center/cover no-repeat;
+}
+
+/* Hiệu ứng card */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* ===============================
+   TEACHER CARD
+=================================*/
+
+.teacher-card{
+    border-radius:20px;
+    overflow:hidden;
+    transition:.35s;
+    box-shadow:0 12px 28px rgba(0,0,0,.12);
+}
+
+.teacher-card:hover{
+    transform:translateY(-10px);
+}
+
+.teacher-card img{
+    height:320px;
+    object-fit:cover;
+}
+
+.teacher-card h4{
+    font-weight:700;
+    margin-top:10px;
+}
+
+.teacher-card p{
+    color:#666;
+}
+
+/* ===============================
+   REVIEW SECTION
+=================================*/
+
+.carousel{
+    background:#fff;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:var(--shadow);
+}
+
+.carousel-item{
+    min-height:220px;
+}
+
+.carousel h4{
+    color:#FFC107;
+    font-size:2rem;
+}
+
+.carousel p{
+    font-size:1.1rem;
+}
+/* ===============================
+   CONTACT FORM
+=================================*/
+
+#contact{
+    background:#fff;
+}
+
+.form-control{
+    border-radius:15px;
+    padding:12px;
+    border:2px solid #ddd;
+    transition:.3s;
+}
+
+.form-control:focus{
+    border-color:var(--primary);
+    box-shadow:0 0 0 .2rem rgba(103,80,164,.2);
+}
+
+textarea{
+    resize:none;
+}
+
+label{
+    font-weight:600;
+}

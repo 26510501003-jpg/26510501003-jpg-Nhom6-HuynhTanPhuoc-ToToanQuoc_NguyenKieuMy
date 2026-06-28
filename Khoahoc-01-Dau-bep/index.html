@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khóa học Đầu bếp - EduMaster</title>
+    <!-- 1. Nhúng Bootstrap 5 CSS qua CDN (Yêu cầu đề thi) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 2. Liên kết CSS dùng chung từ assets và CSS riêng của trang -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <!-- Navbar: Thanh điều hướng responsive (Yêu cầu bắt buộc) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">EDU<span class="text-primary">MASTER</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../About/index.html">Giới thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Đầu bếp chuyên nghiệp</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content: Chi tiết khóa học (Sử dụng Semantic HTML) -->
+    <main class="container py-5">
+        <!-- Breadcrumb: Hỗ trợ điều hướng người dùng -->
+        <nav aria-label="breadcrumb" class="mb-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Trang chủ</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Khóa học Đầu bếp</li>
+            </ol>
+        </nav>
+
+        <section class="row align-items-center">
+            <div class="col-md-6 mb-4">
+                <!-- Hình ảnh minh họa (Yêu cầu có hình ảnh/icon minh họa) -->
+                <img src="/assets/images/chef.jpg" alt="Nghề đầu bếp" class="img-fluid rounded-4 shadow-lg border border-5 border-white">
+            </div>
+            <div class="col-md-6">
+                <h1 class="fw-bold text-primary mb-3">Đầu Bếp Chuyên Nghiệp Âu - Á</h1>
+                <p class="lead">Trở thành đầu bếp thực thụ với lộ trình đào tạo bài bản từ kỹ thuật cắt thái đến quản lý bếp chuyên nghiệp.</p>
+                <hr class="my-4">
+                
+                <h5 class="fw-bold">Ưu điểm khóa học:</h5>
+                <ul class="list-unstyled mt-3">
+                    <li class="mb-2"><i class="text-success me-2">✓</i> Thực hành 100% tại hệ thống bếp tiêu chuẩn 5 sao.</li>
+                    <li class="mb-2"><i class="text-success me-2">✓</i> Giảng viên là các Siêu đầu bếp, Bếp trưởng nổi tiếng.</li>
+                    <li class="mb-2"><i class="text-success me-2">✓</i> Hỗ trợ giới thiệu việc làm tại các nhà hàng lớn sau tốt nghiệp.</li>
+                </ul>
+
+                <!-- Nút kêu gọi hành động cho chức năng JavaScript -->
+                <div class="d-grid d-md-flex gap-3 mt-4">
+                    <button id="enrollBtn" class="btn btn-primary btn-lg px-5">Đăng ký ngay</button>
+                    <button id="detailToggle" class="btn btn-outline-secondary btn-lg">Xem lộ trình học</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Nội dung chi tiết (Yêu cầu ít nhất 6 item - dùng Bootstrap Card) -->
+        <section id="curriculumSection" class="mt-5 pt-5 d-none">
+            <h2 class="text-center fw-bold mb-5">Nội Dung 6 Module Đào Tạo</h2>
+            <div class="row g-4">
+                <!-- Module 01 -->
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h6 class="text-primary fw-bold">Module 01</h6>
+                            <h5 class="card-title fw-bold">Kiến thức cơ bản</h5>
+                            <p class="card-text text-muted small">Vệ sinh an toàn thực phẩm và kỹ năng sử dụng dao kéo chuyên nghiệp.</p>
+                        </div>
+                    </article>
+                </div>
+                <!-- Module 02 -->
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h6 class="text-primary fw-bold">Module 02</h6>
+                            <h5 class="card-title fw-bold">Kỹ thuật chế biến Á</h5>
+                            <p class="card-text text-muted small">Làm chủ các món xào, kho, canh đặc trưng của ẩm thực Việt và Trung Hoa.</p>
+                        </div>
+                    </article>
+                </div>
+                <!-- Module 03 -->
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h6 class="text-primary fw-bold">Module 03</h6>
+                            <h5 class="card-title fw-bold">Kỹ thuật chế biến Âu</h5>
+                            <p class="card-text text-muted small">Nắm vững các loại sốt nền và kỹ thuật chế biến Steak chuẩn Âu.</p>
+                        </div>
+                    </article>
+                </div>
+                <!-- Module 04 -->
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h6 class="text-primary fw-bold">Module 04</h6>
+                            <h5 class="card-title fw-bold">Nghệ thuật trang trí</h5>
+                            <p class="card-text text-muted small">Kỹ năng trình bày món ăn đẹp mắt (Food Styling) theo xu hướng hiện đại.</p>
+                        </div>
+                    </article>
+                </div>
+                <!-- Module 05 -->
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h6 class="text-primary fw-bold">Module 05</h6>
+                            <h5 class="card-title fw-bold">Quản lý kho & chi phí</h5>
+                            <p class="card-text text-muted small">Tính toán định mức nguyên liệu và tối ưu hóa chi phí vận hành bếp.</p>
+                        </div>
+                    </article>
+                </div>
+                <!-- Module 06 -->
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h6 class="text-primary fw-bold">Module 06</h6>
+                            <h5 class="card-title fw-bold">Đồ án tốt nghiệp</h5>
+                            <p class="card-text text-muted small">Thực hiện thực đơn hoàn chỉnh dưới sự đánh giá của hội đồng chuyên gia.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer: Chân trang (Yêu cầu bắt buộc) -->
+    <footer class="bg-dark text-white py-4 mt-5 text-center">
+        <div class="container">
+            <p class="mb-1 fw-bold text-uppercase">Hệ thống đào tạo EduMaster</p>
+            <p class="small text-secondary">Thực hiện bởi: [Tên nhóm] - MSSV: [Số SV] - &copy; 2026</p>
+        </div>
+    </footer>
+
+    <!-- Nhúng Bootstrap JS Bundle phục vụ Navbar và Modal -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Liên kết tệp script.js riêng (Theo DAN-BAI) -->
+    <script src="script.js"></script>
+</body>
+</html>
